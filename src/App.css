@@ -1,22 +1,157 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+  min-width: 420px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.box {
+  width: 100%;
+}
+.container {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.albom-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.albom-heding-container {
+  text-align: left;
+  display: table;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 2px;
+}
+.albom-body-container {
+  margin-top: 2px;
+  text-align: left;
+  background-color: white;
+  height: 340px;
+  width: 100%;
+}
+.albom-heding {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img-info-container {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 22px;
+  display: table;
+  height: 285px;
+}
+
+.img-responsive {
+  display: table-cell !important;
+  vertical-align: middle;
+  vertical-align: middle;
+  height: 215px;
+  width: 215px;
+}
+.img-wrapper {
+  text-align: center;
+  max-width: 215px;
+}
+.img-tital {
+  display: inline-block;
+  width: 215px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.slick-prev:before {
+  line-height: 1;
+  opacity: 1.75;
+  font-size: 0px;
+  z-index: 100;
+  color: rebeccapurple;
+  font-family: 'FontAwesome';
+  content: '\f0a8' !important;
+}
+
+.slick-prev:after {
+  content: '\f0a8' !important;
+  left: -29px;
+  opacity: 1.75;
+  color: red;
+  line-height: 1;
+  font-family: 'FontAwesome';
+  z-index: 100;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: '\f0a9';
+  color: red;
+  left: -29px;
+  opacity: 1.75;
+  font-family: 'FontAwesome';
+  right: auto;
+  z-index: 100;
+  font-size: 30px;
+}
+.slick-prev {
+  left: -33px;
+}
+.slick-next {
+  right: -29px;
+}
+/* .slick-dots {
+  bottom: -30px;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+} */
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 9px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  padding: 3px;
+  height: 9px;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
